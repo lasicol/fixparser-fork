@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="352" failures="1" errors="0" time="32.801">
+  <testsuite name="FIXEncoder" errors="0" failures="0" skipped="0" timestamp="2023-03-21T13:48:17" time="2.104" tests="9">
+    <testcase classname="FIXEncoder #encode: tag ordering should have encoded the FIX message in correct order 1" name="FIXEncoder #encode: tag ordering should have encoded the FIX message in correct order 1" time="0.002">
+    </testcase>
+    <testcase classname="FIXEncoder #encode: tag ordering should have encoded the FIX message in correct order 2" name="FIXEncoder #encode: tag ordering should have encoded the FIX message in correct order 2" time="0">
+    </testcase>
+    <testcase classname="FIXEncoder #encode: Heartbeat should have encoded the FIX message" name="FIXEncoder #encode: Heartbeat should have encoded the FIX message" time="0.003">
+    </testcase>
+    <testcase classname="FIXEncoder #encode: Logon should have encoded the FIX message" name="FIXEncoder #encode: Logon should have encoded the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXEncoder #encode: Custom header/trailer should have encoded the FIX message with custom FIX version" name="FIXEncoder #encode: Custom header/trailer should have encoded the FIX message with custom FIX version" time="0.001">
+    </testcase>
+    <testcase classname="FIXEncoder #encode: Custom header/trailer should have encoded the FIX message with custom Fields.BodyLength" name="FIXEncoder #encode: Custom header/trailer should have encoded the FIX message with custom Fields.BodyLength" time="0.001">
+    </testcase>
+    <testcase classname="FIXEncoder #encode: Custom header/trailer should have encoded the FIX message with custom Fields.CheckSum" name="FIXEncoder #encode: Custom header/trailer should have encoded the FIX message with custom Fields.CheckSum" time="0">
+    </testcase>
+    <testcase classname="FIXEncoder #encode: Multiple encode should have encoded the FIX message 1" name="FIXEncoder #encode: Multiple encode should have encoded the FIX message 1" time="0.001">
+    </testcase>
+    <testcase classname="FIXEncoder #encode: Multiple encode should have encoded the FIX message 2" name="FIXEncoder #encode: Multiple encode should have encoded the FIX message 2" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="FIXParser" errors="0" failures="0" skipped="0" timestamp="2023-03-21T13:48:17" time="2.396" tests="339">
+    <testcase classname="FIXParser #parse: constructor validation should return null when having no arguments" name="FIXParser #parse: constructor validation should return null when having no arguments" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: unknown SOH &quot;/&quot; should parse the message, SOH &quot;/&quot;" name="FIXParser #parse: unknown SOH &quot;/&quot; should parse the message, SOH &quot;/&quot;" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: special characters should parse the message" name="FIXParser #parse: special characters should parse the message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: tag number and value in text should parse the message" name="FIXParser #parse: tag number and value in text should parse the message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: invalid message should return null when having incorrect message" name="FIXParser #parse: invalid message should return null when having incorrect message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have parsed the FIX message" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have BeginString value FIX.4.2" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have BeginString value FIX.4.2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have BodyLength value 440 (validated)" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have BodyLength value 440 (validated)" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have MsgType value 8" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have MsgType value 8" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have DeliverToCompID value LZJ" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have DeliverToCompID value LZJ" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have MsgSeqNum value LZJ" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have MsgSeqNum value LZJ" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have SenderCompID value CCG" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have SenderCompID value CCG" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have TargetCompID value LEH_LZJ02" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have TargetCompID value LEH_LZJ02" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have SendingTime value 20100302- 22:36:15" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have SendingTime value 20100302- 22:36:15" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have Symbol value IOC" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have Symbol value IOC" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have OrderID value NF 0039/03022010" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have OrderID value NF 0039/03022010" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ClOrdID value NF 0039/03022010" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ClOrdID value NF 0039/03022010" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ExecID value NF 0039/03022010 001001002" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ExecID value NF 0039/03022010 001001002" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ExecTransType value 2 (Correct)" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ExecTransType value 2 (Correct)" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have OrdStatus value 2" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have OrdStatus value 2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ExecType value 2" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ExecType value 2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have Side value 1" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have Side value 1" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have OrderQty value 100" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have OrderQty value 100" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have OrdType value 1" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have OrdType value 1" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have TimeInForce value 0" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have TimeInForce value 0" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have LastPx value 49.3700" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have LastPx value 49.3700" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have LastQty value 100" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have LastQty value 100" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have CumQty value 0" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have CumQty value 0" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have AvgPx value 0" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have AvgPx value 0" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have LeavesQty value 0" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have LeavesQty value 0" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have TransactTime value 20100302-22:36:16" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have TransactTime value 20100302-22:36:16" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have Text value Trade correction" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have Text value Trade correction" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ExecRefID value NF 0039/03022010 001001001" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ExecRefID value NF 0039/03022010 001001001" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have Account value ABC123ZYX" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have Account value ABC123ZYX" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have LastMkt value N" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have LastMkt value N" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have SecurityExchange value N" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have SecurityExchange value N" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have Rule80A value A" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have Rule80A value A" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have NYSEDirect value NX" name="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have NYSEDirect value NX" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have DBExecID value 000010" name="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have DBExecID value 000010" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have BillingIndicator value 1" name="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have BillingIndicator value 1" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have StatusResp value 5" name="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have StatusResp value 5" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have ExpERCReferenceNumber value 0000100002" name="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have ExpERCReferenceNumber value 0000100002" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have PrevExpERCReferenceNumber value 0000100001" name="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have PrevExpERCReferenceNumber value 0000100001" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have NoContraBrokers value 1" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have NoContraBrokers value 1" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ContraBroker value TOD" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ContraBroker value TOD" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ContraTrader value 0000" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ContraTrader value 0000" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ContraTradeQty value 100" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ContraTradeQty value 100" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have ContraTradeTime value 1736" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have ContraTradeTime value 1736" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have LastCapacity value 1" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have LastCapacity value 1" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have SettlType value 0" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have SettlType value 0" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have ERCReferenceNumber value 001001002" name="FIXParser #parse: SDBK Price Correction of Previous Execution NySE extensions: should have ERCReferenceNumber value 001001002" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should have invalid CheckSum value 235" name="FIXParser #parse: SDBK Price Correction of Previous Execution should have invalid CheckSum value 235" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SDBK Price Correction of Previous Execution should get the correct field" name="FIXParser #parse: SDBK Price Correction of Previous Execution should get the correct field" time="0.002">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have parsed the FIX message" name="FIXParser #parse: New order should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have BeginString value FIX.4.2" name="FIXParser #parse: New order should have BeginString value FIX.4.2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have BodyLength value 154 (validated)" name="FIXParser #parse: New order should have BodyLength value 154 (validated)" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have MsgType value E" name="FIXParser #parse: New order should have MsgType value E" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have SenderCompID value INST" name="FIXParser #parse: New order should have SenderCompID value INST" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have MsgSeqNum value BROK" name="FIXParser #parse: New order should have MsgSeqNum value BROK" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have SendingTime value 20050908-15:51:22" name="FIXParser #parse: New order should have SendingTime value 20050908-15:51:22" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have MsgSeqNum value 200" name="FIXParser #parse: New order should have MsgSeqNum value 200" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have ListID value 14" name="FIXParser #parse: New order should have ListID value 14" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have BidType value 1" name="FIXParser #parse: New order should have BidType value 1" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have TotNoOrders value 2" name="FIXParser #parse: New order should have TotNoOrders value 2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have NoOrders value 2" name="FIXParser #parse: New order should have NoOrders value 2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have ClOrdID value order- 1" name="FIXParser #parse: New order should have ClOrdID value order- 1" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have ListSeqNo value 1" name="FIXParser #parse: New order should have ListSeqNo value 1" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have Symbol value IBM" name="FIXParser #parse: New order should have Symbol value IBM" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have Side value 2" name="FIXParser #parse: New order should have Side value 2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have OrderQty value 2000" name="FIXParser #parse: New order should have OrderQty value 2000" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have OrdType value 1" name="FIXParser #parse: New order should have OrdType value 1" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have ClOrdID value order-2" name="FIXParser #parse: New order should have ClOrdID value order-2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have ListSeqNo value 2" name="FIXParser #parse: New order should have ListSeqNo value 2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have Symbol value AOL" name="FIXParser #parse: New order should have Symbol value AOL" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have Side value 2" name="FIXParser #parse: New order should have Side value 2" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have OrderQty value 1000" name="FIXParser #parse: New order should have OrderQty value 1000" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: New order should have OrdType value 1" name="FIXParser #parse: New order should have OrdType value 1" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have BeginString value FIX.4.4" name="FIXParser #parse: ExecutionReport should have BeginString value FIX.4.4" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have BodyLength value 1753 (validated)" name="FIXParser #parse: ExecutionReport should have BodyLength value 1753 (validated)" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType value 8" name="FIXParser #parse: ExecutionReport should have MsgType value 8" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have PartySubID value 8" name="FIXParser #parse: ExecutionReport should have PartySubID value 8" time="0">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description New Order Single" name="FIXParser #getBriefDescription should generate a brief description New Order Single" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description CBS Direct-To-Handheld New Order Single" name="FIXParser #getBriefDescription should generate a brief description CBS Direct-To-Handheld New Order Single" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description BBSS Execution" name="FIXParser #getBriefDescription should generate a brief description BBSS Execution" time="0.006">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description BBSS Trade Bust of Previous Execution" name="FIXParser #getBriefDescription should generate a brief description BBSS Trade Bust of Previous Execution" time="0.008">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Cancel Replace (changing quantity) of previously reduced order" name="FIXParser #getBriefDescription should generate a brief description Cancel Replace (changing quantity) of previously reduced order" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Closing Offset (New Order Single)" name="FIXParser #getBriefDescription should generate a brief description Closing Offset (New Order Single)" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description MatchPoint (New Order Single)" name="FIXParser #getBriefDescription should generate a brief description MatchPoint (New Order Single)" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Sub-Penny (New Order Single)" name="FIXParser #getBriefDescription should generate a brief description Sub-Penny (New Order Single)" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Dot Reserve Order Type (Max Floor)" name="FIXParser #getBriefDescription should generate a brief description Dot Reserve Order Type (Max Floor)" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description BBSS Max Quantity Order (99,999,900 shares)" name="FIXParser #getBriefDescription should generate a brief description BBSS Max Quantity Order (99,999,900 shares)" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Symbol with a Suffix" name="FIXParser #getBriefDescription should generate a brief description Symbol with a Suffix" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Partial Fill Followed by Full Fill" name="FIXParser #getBriefDescription should generate a brief description Partial Fill Followed by Full Fill" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Execution Filling the Order" name="FIXParser #getBriefDescription should generate a brief description Execution Filling the Order" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description MatchPoint (Execution Report)" name="FIXParser #getBriefDescription should generate a brief description MatchPoint (Execution Report)" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Sub-Penny (Execution Report)" name="FIXParser #getBriefDescription should generate a brief description Sub-Penny (Execution Report)" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description New Order (order to be replaced)" name="FIXParser #getBriefDescription should generate a brief description New Order (order to be replaced)" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #getBriefDescription should generate a brief description Multiple messages" name="FIXParser #getBriefDescription should generate a brief description Multiple messages" time="0.046">
+    </testcase>
+    <testcase classname="FIXParser #getField: ExecutionReport should get the correct field" name="FIXParser #getField: ExecutionReport should get the correct field" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: false" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: true" name="FIXParser #parse: ExecutionReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: false" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: false" name="FIXParser #parse: ExecutionReport should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: false" name="FIXParser #parse: ExecutionReport should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: false" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: false" name="FIXParser #parse: ExecutionReport should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have parsed the FIX message" name="FIXParser #parse: Logon should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have MsgType Logon" name="FIXParser #parse: Logon should have MsgType Logon" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid BodyLength: true" name="FIXParser #parse: Logon should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid CheckSum: true" name="FIXParser #parse: Logon should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should match snapshot" name="FIXParser #parse: Logon should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have parsed the FIX message" name="FIXParser #parse: Logon should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have MsgType Logon" name="FIXParser #parse: Logon should have MsgType Logon" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid BodyLength: true" name="FIXParser #parse: Logon should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid CheckSum: true" name="FIXParser #parse: Logon should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should match snapshot" name="FIXParser #parse: Logon should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have parsed the FIX message" name="FIXParser #parse: Heartbeat should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have MsgType Heartbeat" name="FIXParser #parse: Heartbeat should have MsgType Heartbeat" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid BodyLength: true" name="FIXParser #parse: Heartbeat should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid CheckSum: true" name="FIXParser #parse: Heartbeat should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should match snapshot" name="FIXParser #parse: Heartbeat should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have parsed the FIX message" name="FIXParser #parse: Heartbeat should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have MsgType Heartbeat" name="FIXParser #parse: Heartbeat should have MsgType Heartbeat" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid BodyLength: true" name="FIXParser #parse: Heartbeat should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid CheckSum: true" name="FIXParser #parse: Heartbeat should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should match snapshot" name="FIXParser #parse: Heartbeat should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: true" name="FIXParser #parse: ExecutionReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: true" name="FIXParser #parse: ExecutionReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have parsed the FIX message" name="FIXParser #parse: TradeCaptureReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have MsgType TradeCaptureReport" name="FIXParser #parse: TradeCaptureReport should have MsgType TradeCaptureReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have valid BodyLength: true" name="FIXParser #parse: TradeCaptureReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have valid CheckSum: true" name="FIXParser #parse: TradeCaptureReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should match snapshot" name="FIXParser #parse: TradeCaptureReport should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have parsed the FIX message" name="FIXParser #parse: TradeCaptureReportAck should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have MsgType TradeCaptureReportAck" name="FIXParser #parse: TradeCaptureReportAck should have MsgType TradeCaptureReportAck" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have valid BodyLength: true" name="FIXParser #parse: TradeCaptureReportAck should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have valid CheckSum: true" name="FIXParser #parse: TradeCaptureReportAck should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should match snapshot" name="FIXParser #parse: TradeCaptureReportAck should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have parsed the FIX message" name="FIXParser #parse: TradeCaptureReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have MsgType TradeCaptureReport" name="FIXParser #parse: TradeCaptureReport should have MsgType TradeCaptureReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have valid BodyLength: true" name="FIXParser #parse: TradeCaptureReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have valid CheckSum: true" name="FIXParser #parse: TradeCaptureReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should match snapshot" name="FIXParser #parse: TradeCaptureReport should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have parsed the FIX message" name="FIXParser #parse: TradeCaptureReportAck should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have MsgType TradeCaptureReportAck" name="FIXParser #parse: TradeCaptureReportAck should have MsgType TradeCaptureReportAck" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have valid BodyLength: true" name="FIXParser #parse: TradeCaptureReportAck should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have valid CheckSum: true" name="FIXParser #parse: TradeCaptureReportAck should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should match snapshot" name="FIXParser #parse: TradeCaptureReportAck should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have parsed the FIX message" name="FIXParser #parse: TradeCaptureReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have MsgType TradeCaptureReport" name="FIXParser #parse: TradeCaptureReport should have MsgType TradeCaptureReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have valid BodyLength: true" name="FIXParser #parse: TradeCaptureReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should have valid CheckSum: true" name="FIXParser #parse: TradeCaptureReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReport should match snapshot" name="FIXParser #parse: TradeCaptureReport should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have parsed the FIX message" name="FIXParser #parse: TradeCaptureReportAck should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have MsgType TradeCaptureReportAck" name="FIXParser #parse: TradeCaptureReportAck should have MsgType TradeCaptureReportAck" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have valid BodyLength: true" name="FIXParser #parse: TradeCaptureReportAck should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should have valid CheckSum: true" name="FIXParser #parse: TradeCaptureReportAck should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportAck should match snapshot" name="FIXParser #parse: TradeCaptureReportAck should match snapshot" time="0.002">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have parsed the FIX message" name="FIXParser #parse: Logon should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have MsgType Logon" name="FIXParser #parse: Logon should have MsgType Logon" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid BodyLength: true" name="FIXParser #parse: Logon should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid CheckSum: false" name="FIXParser #parse: Logon should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should match snapshot" name="FIXParser #parse: Logon should match snapshot" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have parsed the FIX message" name="FIXParser #parse: Logon should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have MsgType Logon" name="FIXParser #parse: Logon should have MsgType Logon" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid BodyLength: true" name="FIXParser #parse: Logon should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid CheckSum: true" name="FIXParser #parse: Logon should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should match snapshot" name="FIXParser #parse: Logon should match snapshot" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have parsed the FIX message" name="FIXParser #parse: Logon should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have MsgType Logon" name="FIXParser #parse: Logon should have MsgType Logon" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid BodyLength: true" name="FIXParser #parse: Logon should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid CheckSum: true" name="FIXParser #parse: Logon should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should match snapshot" name="FIXParser #parse: Logon should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have parsed the FIX message" name="FIXParser #parse: Logon should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have MsgType Logon" name="FIXParser #parse: Logon should have MsgType Logon" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid BodyLength: true" name="FIXParser #parse: Logon should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should have valid CheckSum: true" name="FIXParser #parse: Logon should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Logon should match snapshot" name="FIXParser #parse: Logon should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should have parsed the FIX message" name="FIXParser #parse: Reject should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should have MsgType Reject" name="FIXParser #parse: Reject should have MsgType Reject" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should have valid BodyLength: true" name="FIXParser #parse: Reject should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should have valid CheckSum: true" name="FIXParser #parse: Reject should have valid CheckSum: true" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should match snapshot" name="FIXParser #parse: Reject should match snapshot" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: true" name="FIXParser #parse: ExecutionReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: true" name="FIXParser #parse: ExecutionReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: true" name="FIXParser #parse: ExecutionReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: true" name="FIXParser #parse: ExecutionReport should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: true" name="FIXParser #parse: ExecutionReport should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.004">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have parsed the FIX message" name="FIXParser #parse: Heartbeat should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have MsgType Heartbeat" name="FIXParser #parse: Heartbeat should have MsgType Heartbeat" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid BodyLength: true" name="FIXParser #parse: Heartbeat should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid CheckSum: true" name="FIXParser #parse: Heartbeat should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should match snapshot" name="FIXParser #parse: Heartbeat should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: TestRequest should have parsed the FIX message" name="FIXParser #parse: TestRequest should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TestRequest should have MsgType TestRequest" name="FIXParser #parse: TestRequest should have MsgType TestRequest" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TestRequest should have valid BodyLength: true" name="FIXParser #parse: TestRequest should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TestRequest should have valid CheckSum: true" name="FIXParser #parse: TestRequest should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TestRequest should match snapshot" name="FIXParser #parse: TestRequest should match snapshot" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have parsed the FIX message" name="FIXParser #parse: Heartbeat should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have MsgType Heartbeat" name="FIXParser #parse: Heartbeat should have MsgType Heartbeat" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid BodyLength: true" name="FIXParser #parse: Heartbeat should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid CheckSum: true" name="FIXParser #parse: Heartbeat should have valid CheckSum: true" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should match snapshot" name="FIXParser #parse: Heartbeat should match snapshot" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: false" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: false" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have parsed the FIX message" name="FIXParser #parse: ExecutionReport should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" name="FIXParser #parse: ExecutionReport should have MsgType ExecutionReport" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid BodyLength: false" name="FIXParser #parse: ExecutionReport should have valid BodyLength: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should have valid CheckSum: false" name="FIXParser #parse: ExecutionReport should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: ExecutionReport should match snapshot" name="FIXParser #parse: ExecutionReport should match snapshot" time="0.005">
+    </testcase>
+    <testcase classname="FIXParser #parse: XMLnonFIX should have parsed the FIX message" name="FIXParser #parse: XMLnonFIX should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: XMLnonFIX should have MsgType XMLnonFIX" name="FIXParser #parse: XMLnonFIX should have MsgType XMLnonFIX" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: XMLnonFIX should have valid BodyLength: true" name="FIXParser #parse: XMLnonFIX should have valid BodyLength: true" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: XMLnonFIX should have valid CheckSum: false" name="FIXParser #parse: XMLnonFIX should have valid CheckSum: false" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: XMLnonFIX should match snapshot" name="FIXParser #parse: XMLnonFIX should match snapshot" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SequenceReset should have parsed the FIX message" name="FIXParser #parse: SequenceReset should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SequenceReset should have MsgType SequenceReset" name="FIXParser #parse: SequenceReset should have MsgType SequenceReset" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SequenceReset should have valid BodyLength: true" name="FIXParser #parse: SequenceReset should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SequenceReset should have valid CheckSum: true" name="FIXParser #parse: SequenceReset should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: SequenceReset should match snapshot" name="FIXParser #parse: SequenceReset should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.003">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataIncrementalRefresh should have parsed the FIX message" name="FIXParser #parse: MarketDataIncrementalRefresh should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataIncrementalRefresh should have MsgType MarketDataIncrementalRefresh" name="FIXParser #parse: MarketDataIncrementalRefresh should have MsgType MarketDataIncrementalRefresh" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataIncrementalRefresh should have valid BodyLength: true" name="FIXParser #parse: MarketDataIncrementalRefresh should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataIncrementalRefresh should have valid CheckSum: true" name="FIXParser #parse: MarketDataIncrementalRefresh should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataIncrementalRefresh should match snapshot" name="FIXParser #parse: MarketDataIncrementalRefresh should match snapshot" time="0.002">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have parsed the FIX message" name="FIXParser #parse: Heartbeat should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have MsgType Heartbeat" name="FIXParser #parse: Heartbeat should have MsgType Heartbeat" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid BodyLength: true" name="FIXParser #parse: Heartbeat should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should have valid CheckSum: true" name="FIXParser #parse: Heartbeat should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Heartbeat should match snapshot" name="FIXParser #parse: Heartbeat should match snapshot" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: IOI should have parsed the FIX message" name="FIXParser #parse: IOI should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: IOI should have MsgType IOI" name="FIXParser #parse: IOI should have MsgType IOI" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: IOI should have valid BodyLength: true" name="FIXParser #parse: IOI should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: IOI should have valid CheckSum: true" name="FIXParser #parse: IOI should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: IOI should match snapshot" name="FIXParser #parse: IOI should match snapshot" time="0.002">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have parsed the FIX message" name="FIXParser #parse: NewOrderSingle should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" name="FIXParser #parse: NewOrderSingle should have MsgType NewOrderSingle" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" name="FIXParser #parse: NewOrderSingle should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" name="FIXParser #parse: NewOrderSingle should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: NewOrderSingle should match snapshot" name="FIXParser #parse: NewOrderSingle should match snapshot" time="0.002">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportRequest should have parsed the FIX message" name="FIXParser #parse: TradeCaptureReportRequest should have parsed the FIX message" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportRequest should have MsgType TradeCaptureReportRequest" name="FIXParser #parse: TradeCaptureReportRequest should have MsgType TradeCaptureReportRequest" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportRequest should have valid BodyLength: true" name="FIXParser #parse: TradeCaptureReportRequest should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportRequest should have valid CheckSum: true" name="FIXParser #parse: TradeCaptureReportRequest should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: TradeCaptureReportRequest should match snapshot" name="FIXParser #parse: TradeCaptureReportRequest should match snapshot" time="0.002">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should have parsed the FIX message" name="FIXParser #parse: Reject should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should have MsgType Reject" name="FIXParser #parse: Reject should have MsgType Reject" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should have valid BodyLength: true" name="FIXParser #parse: Reject should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should have valid CheckSum: true" name="FIXParser #parse: Reject should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: Reject should match snapshot" name="FIXParser #parse: Reject should match snapshot" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataSnapshotFullRefresh should have parsed the FIX message" name="FIXParser #parse: MarketDataSnapshotFullRefresh should have parsed the FIX message" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataSnapshotFullRefresh should have MsgType MarketDataSnapshotFullRefresh" name="FIXParser #parse: MarketDataSnapshotFullRefresh should have MsgType MarketDataSnapshotFullRefresh" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataSnapshotFullRefresh should have valid BodyLength: true" name="FIXParser #parse: MarketDataSnapshotFullRefresh should have valid BodyLength: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataSnapshotFullRefresh should have valid CheckSum: true" name="FIXParser #parse: MarketDataSnapshotFullRefresh should have valid CheckSum: true" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: MarketDataSnapshotFullRefresh should match snapshot" name="FIXParser #parse: MarketDataSnapshotFullRefresh should match snapshot" time="0.002">
+    </testcase>
+    <testcase classname="FIXParser #parse: unknown SOH should parse the message, SOH &quot; &quot;" name="FIXParser #parse: unknown SOH should parse the message, SOH &quot; &quot;" time="0.001">
+    </testcase>
+    <testcase classname="FIXParser #parse: checksum validation should validate checksum correctly" name="FIXParser #parse: checksum validation should validate checksum correctly" time="0">
+    </testcase>
+    <testcase classname="FIXParser #parse: checksum validation should validate checksum correctly" name="FIXParser #parse: checksum validation should validate checksum correctly" time="0">
+    </testcase>
+    <testcase classname="FIXParser ExecutionReport (Snapshot) should have the expected format" name="FIXParser ExecutionReport (Snapshot) should have the expected format" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="FIXServer" errors="0" failures="1" skipped="0" timestamp="2023-03-21T13:48:17" time="32.143" tests="4">
+    <testcase classname="FIXServer TCP End-to-end: connect and Logon" name="FIXServer TCP End-to-end: connect and Logon" time="0.015">
+    </testcase>
+    <testcase classname="FIXServer TCP End-to-end: invalid Logon" name="FIXServer TCP End-to-end: invalid Logon" time="0.004">
+    </testcase>
+    <testcase classname="FIXServer Websocket End-to-end: connect and Logon" name="FIXServer Websocket End-to-end: connect and Logon" time="29.987">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:9803
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1278:16)</failure>
+      <failure>Error: thrown: &quot;Exceeded timeout of 30000 ms for a test.
+Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.&quot;
+    at /Users/bl/projects/fixparser/test/fixserver.test.ts:150:9
+    at _dispatchDescribe (/Users/bl/projects/fixparser/node_modules/jest-circus/build/index.js:98:26)
+    at describe (/Users/bl/projects/fixparser/node_modules/jest-circus/build/index.js:60:5)
+    at /Users/bl/projects/fixparser/test/fixserver.test.ts:147:5
+    at _dispatchDescribe (/Users/bl/projects/fixparser/node_modules/jest-circus/build/index.js:98:26)
+    at describe (/Users/bl/projects/fixparser/node_modules/jest-circus/build/index.js:60:5)
+    at Object.&lt;anonymous&gt; (/Users/bl/projects/fixparser/test/fixserver.test.ts:6:1)
+    at Runtime._execModule (/Users/bl/projects/fixparser/node_modules/jest-runtime/build/index.js:1646:24)
+    at Runtime._loadModule (/Users/bl/projects/fixparser/node_modules/jest-runtime/build/index.js:1185:12)
+    at Runtime.requireModule (/Users/bl/projects/fixparser/node_modules/jest-runtime/build/index.js:1009:12)</failure>
+    </testcase>
+    <testcase classname="FIXServer Websocket End-to-end: invalid Logon" name="FIXServer Websocket End-to-end: invalid Logon" time="0.01">
+    </testcase>
+  </testsuite>
+</testsuites>
